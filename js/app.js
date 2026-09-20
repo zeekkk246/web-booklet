@@ -65,7 +65,7 @@ const WanasagaraApp = {
               class="glass-card px-7 py-3.5 rounded-xl font-semibold text-emerald-300 hover:text-white inline-flex items-center gap-2.5 text-sm sm:text-base border border-emerald-500/30"
             >
               <i data-lucide="compass" class="w-4 h-4 text-emerald-400"></i>
-              <span>Jelajahi 7 Divisi</span>
+              <span>Jelajahi 8 Divisi</span>
             </a>
 
             <a 
@@ -144,21 +144,21 @@ const WanasagaraApp = {
         </div>
       </section>
 
-      <!-- HIGHLIGHT SECTION: 7 DIVISI ORGANISASI -->
+      <!-- HIGHLIGHT SECTION: 8 DIVISI ORGANISASI -->
       <section class="py-16 bg-gradient-to-b from-[#070d0f] via-[#091519] to-[#070d0f] relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <div>
-              <span class="badge-forest px-3.5 py-1 rounded-full text-xs font-mono-coord uppercase tracking-wider">7 Korps & Tata Kelola</span>
+              <span class="badge-forest px-3.5 py-1 rounded-full text-xs font-mono-coord uppercase tracking-wider">8 Korps & Tata Kelola</span>
               <h2 class="text-3xl sm:text-4xl font-bold text-white mt-3 font-heading">
-                Keahlian Khusus & 7 Divisi Organisasi
+                Keahlian Khusus & 8 Divisi Organisasi
               </h2>
               <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-xl">
-                MTDD, Mountaineering, Human Resources, Equipment, Secretary, Public Relations, dan Student Activities.
+                MTDD, Mountaineering, Human Resources, Equipment, Secretary, Treasurer, Public Relations, dan Student Activities.
               </p>
             </div>
             <a href="#/divisi" class="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 text-sm font-semibold mt-4 md:mt-0 group">
-              <span>Buka Detail Seluruh 7 Divisi</span>
+              <span>Buka Detail Seluruh 8 Divisi</span>
               <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
             </a>
           </div>
@@ -480,47 +480,67 @@ const WanasagaraApp = {
             Struktur <span class="gradient-text-forest-ocean">Organisasi</span>
           </h1>
           <p class="text-gray-600 text-sm sm:text-base mt-3">
-            Badan Pengurus Harian (BPH) Diverventure President University beserta Ketua 7 Divisi Resmi.
+            Badan Pengurus Diverventure President University beserta Ketua 8 Divisi Resmi.
           </p>
         </div>
 
-        <!-- BADAN PENGURUS HARIAN (4 CORE OFFICERS) -->
-        <div class="mb-16">
+        <!-- KETUA & WAKIL KETUA (bagian utama) -->
+        <div class="mb-10">
           <div class="flex items-center gap-3 mb-6">
             <i data-lucide="shield" class="w-5 h-5 text-emerald-500"></i>
-            <h2 class="text-xl font-bold text-gray-900 font-heading">Badan Pengurus Harian (BPH 2026 - Sekarang)</h2>
+            <h2 class="text-xl font-bold text-gray-900 font-heading">Badan Pengurus — Ketua & Wakil Ketua</h2>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
             ${data.structure.bph.map(leader => `
-              <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-md flex flex-col justify-between group hover:shadow-lg transition-shadow">
-                <div class="relative h-64 overflow-hidden">
-                  <img src="${leader.photo}" alt="${leader.name}" style="${leader.objectStyle ? 'object-position:' + leader.objectStyle + ';' : ''}" class="w-full h-full object-cover ${leader.zoomClass || ''} ${leader.objectPos || 'object-center'} group-hover:scale-105 transition-transform duration-500" />
+              <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-md flex flex-col justify-between group">
+                <div class="relative h-72 overflow-hidden">
+                  <img src="${leader.photo}" alt="${leader.name}" style="${leader.objectStyle ? 'object-position:' + leader.objectStyle + ';' : ''}" class="w-full h-full object-cover ${leader.objectPos || 'object-center'} group-hover:scale-105 transition-transform duration-500" />
                   <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold bg-emerald-600 text-white shadow whitespace-nowrap">
+                  <div class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold bg-emerald-600 text-white">
                     ${leader.role}
                   </div>
                 </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                  <div>
-                    <h3 class="text-base font-bold text-gray-900">${leader.name}</h3>
-                    <div class="mt-1 inline-block px-2.5 py-0.5 rounded bg-cyan-100 text-cyan-700 text-[11px] font-mono-coord border border-cyan-200">
-                      ${leader.dept} — Presuniv
-                    </div>
-                    <p class="text-xs text-gray-500 italic mt-3 border-l-2 border-emerald-400 pl-2.5 leading-relaxed">
-                      "${leader.quote}"
-                    </p>
+                <div class="p-6">
+                  <h3 class="text-lg font-bold text-gray-900">${leader.name}</h3>
+                  <div class="mt-1 inline-block px-2.5 py-0.5 rounded bg-cyan-100 text-cyan-700 text-[11px] font-mono-coord border border-cyan-200">
+                    ${leader.dept} — President University
                   </div>
+                  <p class="text-xs text-gray-500 italic mt-4 border-l-2 border-emerald-400 pl-3 leading-relaxed">
+                    "${leader.quote}"
+                  </p>
                 </div>
               </div>
             `).join('')}
           </div>
         </div>
 
-        <!-- KETUA 7 DIVISI RESMI -->
+        <!-- SECRETARY & TREASURER -->
+        <div class="mb-16">
+          <div class="flex items-center gap-3 mb-6">
+            <i data-lucide="users" class="w-5 h-5 text-cyan-500"></i>
+            <h2 class="text-xl font-bold text-gray-900 font-heading">Secretary & Treasurer</h2>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            ${data.structure.bphSupport.map(member => `
+              <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-md flex items-center gap-5 p-5 group">
+                <div class="w-20 h-20 rounded-xl overflow-hidden border border-gray-200 shrink-0">
+                  <img src="${member.photo}" alt="${member.name}" class="w-full h-full object-cover ${member.zoomClass || 'group-hover:scale-105'} transition-transform duration-300" />
+                </div>
+                <div>
+                  <div class="text-xs font-mono-coord text-emerald-600 uppercase tracking-wider mb-1">${member.role}</div>
+                  <h3 class="text-base font-bold text-gray-900">${member.name}</h3>
+                  <div class="text-[11px] text-cyan-600 font-mono-coord mt-0.5">${member.dept} — President University</div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- KETUA 8 DIVISI RESMI -->
         <div class="mb-16">
           <div class="flex items-center gap-3 mb-6">
             <i data-lucide="compass" class="w-5 h-5 text-cyan-500"></i>
-            <h2 class="text-xl font-bold text-gray-900 font-heading">Ketua 7 Divisi Resmi Organisasi</h2>
+            <h2 class="text-xl font-bold text-gray-900 font-heading">Ketua 8 Divisi Resmi Organisasi</h2>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             ${data.structure.divisionsHeads.map(head => `
@@ -665,7 +685,7 @@ const WanasagaraApp = {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <!-- Header -->
         <div class="text-center max-w-3xl mx-auto mb-12">
-          <span class="px-4 py-1 rounded-full text-xs font-mono-coord uppercase tracking-wider bg-emerald-100 text-emerald-700 border border-emerald-200">7 Korps &amp; Divisi Resmi</span>
+          <span class="px-4 py-1 rounded-full text-xs font-mono-coord uppercase tracking-wider bg-emerald-100 text-emerald-700 border border-emerald-200">8 Korps &amp; Divisi Resmi</span>
           <h1 class="text-3xl sm:text-5xl font-extrabold text-gray-900 mt-3 font-heading">
             Divisi <span class="gradient-text-forest-ocean">Diverventure</span>
           </h1>

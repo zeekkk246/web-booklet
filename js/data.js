@@ -22,7 +22,7 @@ const DIVERVENTURE_DATA = {
     },
     stats: [
       { label: "Tahun Berdiri", value: "2000", icon: "calendar", desc: "Berdiri di President University sejak tahun 2000" },
-      { label: "Divisi Resmi", value: "7", icon: "compass", desc: "MTDD, Mountaineering, HR, Equipment, Secretary, PR, Student Activities" },
+      { label: "Divisi Resmi", value: "8", icon: "compass", desc: "MTDD, Mountaineering, HR, Equipment, Secretary, Treasurer, PR, Student Activities" },
       { label: "Universitas", value: "Presuniv", icon: "building", desc: "President University, Cikarang, Bekasi" },
       { label: "Kepengurusan", value: "BP 2", icon: "shield", desc: "Badan Pengurus 2 — aktif saat ini" }
     ]
@@ -134,7 +134,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
   },
 
   structure: {
-    // BADAN PENGURUS HARIAN (BPH 2026 - SEKARANG)
+    // BADAN PENGURUS — Ketua & Wakil Ketua
     bph: [
       {
         id: "ketua",
@@ -152,27 +152,29 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         dept: "Informatic Technology",
         photo: "images/wakil-zaky.jpg",
         quote: "Di alam bebas tidak ada sekat pemisah; yang ada hanyalah pundak kawan seperjuangan dan kehormatan menjaga kelestarian semesta."
-      },
+      }
+    ],
+
+    // ANGGOTA BPH SUPPORT (Secretary & Treasurer)
+    bphSupport: [
       {
         id: "secretary",
         name: "Jihan R A",
-        role: "Secretary (Sekretaris General)",
+        role: "Secretary",
         dept: "Secretary",
-        photo: "images/secretary-jihan.jpg",
-        quote: "Tertib administrasi dan kearsipan legal adalah fondasi utama keberlanjutan ekspedisi organisasi."
+        photo: "images/secretary-jihan.jpg"
       },
       {
         id: "treasurer",
         name: "Mandalika Bilqis",
-        role: "Treasurer (Bendahara General)",
+        role: "Treasurer",
         dept: "Informatic Technology",
         photo: "images/treasurer-mandalika.jpg",
-        zoomClass: "scale-135 object-center",
-        quote: "Akuntabilitas finansial dan efisiensi pembekalan logistik adalah kunci kelancaran operasional ekspedisi."
+        zoomClass: "scale-135 object-center"
       }
     ],
 
-    // KETUA DIVISI RESMI
+    // KETUA 8 DIVISI RESMI
     divisionsHeads: [
       {
         id: "mtdd",
@@ -230,6 +232,18 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         color: "text-teal-400 border-teal-500/30",
         photo: "images/secretary-jihan.jpg",
         desc: "Mengelola kearsipan organisasi, legalitas izin kawasan, surat-menyurat resmi, dan administrasi organisasi."
+      },
+      {
+        id: "treasurer",
+        name: "Mandalika Bilqis",
+        role: "Ketua Divisi TREASURER",
+        badge: "Treasurer",
+        major: "Informatic Technology",
+        icon: "wallet",
+        color: "text-emerald-400 border-emerald-500/30",
+        photo: "images/treasurer-mandalika.jpg",
+        zoomClass: "scale-135 object-center",
+        desc: "Mengelola sistem keuangan organisasi, penyusunan RAB ekspedisi, pencatatan kas, serta transparansi finansial dan pergerakan dana."
       },
       {
         id: "equipment",
@@ -368,6 +382,29 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         "Notulensi Rapat & Pencatatan Keputusan Organisasi",
         "Manajemen Kearsipan Digital & Dokumen Legal",
         "Penyusunan Laporan Pertanggungjawaban (LPJ)"
+      ],
+      gear: [
+        "Data akan diperbarui."
+      ],
+      expeditions: "Data akan diperbarui."
+    },
+    {
+      id: "treasurer",
+      title: "Divisi TREASURER",
+      subtitle: "Manajemen Keuangan, Anggaran & Fund Raising",
+      coordinator: "Mandalika Bilqis",
+      major: "Informatic Technology",
+      icon: "wallet",
+      themeColor: "#10b981",
+      accentBg: "bg-emerald-950/40 border-emerald-500/30",
+      heroImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80",
+      description: "Divisi Treasurer mengelola sistem keuangan organisasi, penyusunan rancangan anggaran belanja ekspedisi, pencatatan alokasi dana operasional, transparansi pelaporan kas, serta strategi pencarian dana (fundraising) Diverventure President University.",
+      skills: [
+        "Manajemen Keuangan & Pengelolaan Kas Organisasi",
+        "Penyusunan Rancangan Anggaran Biaya (RAB) Ekspedisi",
+        "Audit Finansial & Transparansi Laporan Keuangan",
+        "Pengelolaan Alokasi Dana Operasional & Pembekalan",
+        "Strategi Fundraising & Pencarian Dana Mandiri"
       ],
       gear: [
         "Data akan diperbarui."

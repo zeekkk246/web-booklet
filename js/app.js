@@ -312,17 +312,17 @@ const WanasagaraApp = {
 
             <!-- Era Filter Pills -->
             <div class="flex flex-wrap items-center justify-center gap-2 mt-4" id="archive-era-filters">
-              <button data-era="all" class="era-pill active px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-emerald-600 text-white shadow-md">
+              <button data-era="all" class="era-pill active px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-emerald-600 text-white shadow-md whitespace-nowrap shrink-0">
                 Semua Era (2000 - 2026)
               </button>
-              <button data-era="2000-an" class="era-pill px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-slate-300 hover:text-white">
+              <button data-era="2000-an" class="era-pill px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-slate-300 hover:text-white whitespace-nowrap shrink-0">
                 Era 2000-an
               </button>
-              <button data-era="2010-an" class="era-pill px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-slate-300 hover:text-white">
+              <button data-era="2010-an" class="era-pill px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-slate-300 hover:text-white whitespace-nowrap shrink-0">
                 Era 2010-an
               </button>
-              <button data-era="2020-an" class="era-pill px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-slate-300 hover:text-white">
-                Era 2020-an & Sekarang
+              <button data-era="2020-an" class="era-pill px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-card text-slate-300 hover:text-white whitespace-nowrap shrink-0">
+                Era 2020-an &amp; Sekarang
               </button>
             </div>
           </div>
@@ -584,26 +584,26 @@ const WanasagaraApp = {
     const data = window.DIVERVENTURE_DATA || window.MAPALA_DATA;
     const activities = data.activities || [];
     return `
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <!-- Header -->
-        <div class="text-center max-w-4xl mx-auto mb-12">
-          <div class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-emerald-100 border border-emerald-300 shadow-sm text-emerald-800 mb-4">
-            <span class="font-cute text-2xl sm:text-3xl text-emerald-700 font-bold">✨ Dokumentasi Kegiatan 2 Tahun Terakhir ✨</span>
+        <div class="text-center max-w-4xl mx-auto mb-8 sm:mb-12">
+          <div class="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-2.5 rounded-full bg-emerald-100 border border-emerald-300 shadow-sm text-emerald-800 mb-4 max-w-full">
+            <span class="font-cute text-lg sm:text-3xl text-emerald-700 font-bold leading-tight">✨ Dokumentasi Kegiatan 2 Tahun Terakhir ✨</span>
           </div>
-          <h1 class="text-3xl sm:text-5xl font-extrabold text-gray-900 mt-2 font-heading">
+          <h1 class="text-2xl sm:text-5xl font-extrabold text-gray-900 mt-2 font-heading leading-tight">
             Diverventure President University <span class="gradient-text-forest-ocean">Activities</span>
           </h1>
-          <p class="text-gray-600 text-sm sm:text-base mt-3 max-w-2xl mx-auto leading-relaxed">
-            Dokumentasi utama kegiatan lapangan, pendakian gunung, dan ekspedisi konservasi bahari Diverventure President University selama <strong class="text-emerald-700 font-semibold">2 tahun terakhir (2024 – 2025)</strong>.
+          <p class="text-gray-600 text-xs sm:text-base mt-3 max-w-2xl mx-auto leading-relaxed">
+            Dokumentasi utama kegiatan lapangan, pendakian gunung, dan ekspedisi konservasi bahari Diverventure President University selama <strong class="text-emerald-700 font-semibold">2 tahun terakhir (2024 – 2026)</strong>.
           </p>
         </div>
 
         <!-- HANYA 1 PILIHAN: "SEMUA KEGIATAN" -->
-        <div class="flex items-center justify-center mb-10">
-          <div class="px-6 py-2.5 rounded-2xl bg-emerald-600 text-white font-semibold text-sm shadow-lg border border-emerald-400/40 flex items-center gap-2">
-            <i data-lucide="layers" class="w-4 h-4 text-emerald-200"></i>
+        <div class="flex items-center justify-center mb-8 sm:mb-10 px-2">
+          <div class="px-4 sm:px-6 py-2.5 rounded-2xl bg-emerald-600 text-white font-semibold text-xs sm:text-sm shadow-lg border border-emerald-400/40 flex flex-wrap items-center justify-center gap-2 text-center max-w-full">
+            <i data-lucide="layers" class="w-4 h-4 text-emerald-200 shrink-0"></i>
             <span>Semua Kegiatan (2 Tahun Terakhir)</span>
-            <span class="ml-1.5 px-2 py-0.5 rounded-full bg-black/40 text-xs font-mono-coord">${activities.length} Dokumentasi</span>
+            <span class="px-2.5 py-0.5 rounded-full bg-black/40 text-xs font-mono-coord whitespace-nowrap shrink-0">${activities.length} Dokumentasi</span>
           </div>
         </div>
 
@@ -627,10 +627,10 @@ const WanasagaraApp = {
                   <div class="relative h-64 overflow-hidden">
                     <img src="${act.image}" alt="${act.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                    <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold bg-black/75 backdrop-blur-md text-emerald-300 border border-emerald-500/40">
+                    <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold bg-black/75 backdrop-blur-md text-emerald-300 border border-emerald-500/40 whitespace-nowrap shrink-0">
                       ${act.badge}
                     </span>
-                    <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-mono-coord bg-emerald-600 text-white shadow">
+                    <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-mono-coord bg-emerald-600 text-white shadow whitespace-nowrap shrink-0">
                       ${act.date}
                     </span>
                   </div>
@@ -987,12 +987,12 @@ const WanasagaraApp = {
                   <img src="${p.src}" alt="${p.caption}" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out" />
                   
                   <!-- Tag Overlay Badge -->
-                  <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/75 backdrop-blur-md border border-emerald-400/40 text-emerald-300 text-[11px] font-mono-coord font-semibold shadow">
+                  <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/75 backdrop-blur-md border border-emerald-400/40 text-emerald-300 text-[11px] font-mono-coord font-semibold shadow whitespace-nowrap shrink-0">
                     ${p.tag || 'Diverventure Photo'}
                   </div>
 
                   <!-- Date Overlay Badge -->
-                  <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-emerald-600/90 backdrop-blur-md text-white text-[10px] font-mono-coord font-bold shadow">
+                  <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-emerald-600/90 backdrop-blur-md text-white text-[10px] font-mono-coord font-bold shadow whitespace-nowrap shrink-0">
                     📅 ${p.date}
                   </div>
 

@@ -285,14 +285,12 @@
       </div>
 
       <!-- Bottom Disclaimer -->
-      <div class="pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+      <div class="pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4 text-center sm:text-left">
         <div>
           &copy; 2000 - 2026 DIVERVENTURE PRESIDENT UNIVERSITY • Hak Cipta Dilindungi.
         </div>
-        <div class="flex items-center gap-4 text-xs font-mono-coord">
-          <span class="text-emerald-600">Single Page Application</span>
-          <span>•</span>
-          <span class="text-cyan-600">President University</span>
+        <div class="flex items-center gap-4 text-xs font-mono-coord justify-center">
+          <span class="text-cyan-600 font-semibold">President University</span>
         </div>
       </div>
     </div>
@@ -315,12 +313,27 @@
         window.lucide.createIcons();
       }
 
-      // Mobile Menu Hamburger Toggle
+      // Mobile Menu Hamburger Toggle & Auto-Close
       const mobileBtn = document.getElementById('mobile-menu-btn');
       const mobileMenu = document.getElementById('mobile-menu');
       if (mobileBtn && mobileMenu) {
-        mobileBtn.addEventListener('click', () => {
+        mobileBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
           mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close when clicking any menu link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+          if (!mobileMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
+            mobileMenu.classList.add('hidden');
+          }
         });
       }
 

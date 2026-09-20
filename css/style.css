@@ -425,14 +425,50 @@ body {
 
 /* Mobile Responsive Utility Rules (Flexible for HP & Tablet) */
 @media (max-width: 640px) {
+  html, body {
+    font-size: 15px;
+  }
+
+  /* Prevent auto-zoom on iOS mobile browsers */
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  /* Mobile scrollable tabs without scrollbars */
+  .mobile-scroll-tabs {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+  }
+  .mobile-scroll-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
   .font-mono-coord {
     word-break: break-word;
     overflow-wrap: break-word;
   }
+
   .truncate-mobile {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  /* Mobile container spacing */
+  .mobile-card-padding {
+    padding: 1.25rem !important;
+  }
+
+  /* Touch target optimization */
+  button, a {
+    touch-action: manipulation;
   }
 }
 

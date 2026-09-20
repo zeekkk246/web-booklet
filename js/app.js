@@ -503,7 +503,7 @@ const WanasagaraApp = {
                 <div class="p-6">
                   <h3 class="text-lg font-bold text-gray-900">${leader.name}</h3>
                   <div class="mt-1 inline-block px-2.5 py-0.5 rounded bg-cyan-100 text-cyan-700 text-[11px] font-mono-coord border border-cyan-200">
-                    ${leader.dept} — President University
+                    ${leader.dept} • Presuniv
                   </div>
                   <p class="text-xs text-gray-500 italic mt-4 border-l-2 border-emerald-400 pl-3 leading-relaxed">
                     "${leader.quote}"
@@ -529,7 +529,7 @@ const WanasagaraApp = {
                 <div>
                   <div class="text-xs font-mono-coord text-emerald-600 uppercase tracking-wider mb-1">${member.role}</div>
                   <h3 class="text-base font-bold text-gray-900">${member.name}</h3>
-                  <div class="text-[11px] text-cyan-600 font-mono-coord mt-0.5">${member.dept} — President University</div>
+                  <div class="text-[11px] text-cyan-600 font-mono-coord mt-0.5">${member.dept} • Presuniv</div>
                 </div>
               </div>
             `).join('')}

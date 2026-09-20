@@ -126,8 +126,8 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         title: "Kepengurusan Badan Pengurus 2",
         category: "Badan Pengurus 2",
         location: "President University, Cikarang",
-        desc: "Dipimpin oleh CP Nico Johannes Sirait dan VCP Zaky Purwana, Diverventure melangkah dengan 7 divisi solid: MTDD, Mountaineering, Human Resources, Equipment, Secretary, Public Relations, dan Student Activities.",
-        highlight: "Badan Pengurus 2 Aktif • 7 Divisi Terpadu"
+        desc: "Dipimpin oleh CP Nico Johannes Sirait dan VCP Zaky Purwana, Diverventure melangkah dengan 8 divisi solid: MTDD, Mountaineering, Human Resources, Equipment, Secretary, Treasurer, Public Relations, dan Student Activities.",
+        highlight: "Badan Pengurus 2 Aktif • 8 Divisi Terpadu"
       }
     ]
 
@@ -140,7 +140,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         id: "ketua",
         name: "Nico Johannes Sirait",
         role: "Ketua (Chair Person)",
-        dept: "Informatic Technology",
+        dept: "Information Technology",
         photo: "images/ketua-nico.jpg",
         objectStyle: "center 88%",
         quote: "Diverventure adalah wadah pembuktian bahwa ketangguhan rimba pegunungan menyatu dalam karakter kepemimpinan beretika."
@@ -149,7 +149,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         id: "wakil-ketua",
         name: "Zaky Purwana",
         role: "Wakil Ketua (Vice Chair Person)",
-        dept: "Informatic Technology",
+        dept: "Information Technology",
         photo: "images/wakil-zaky.jpg",
         quote: "Di alam bebas tidak ada sekat pemisah; yang ada hanyalah pundak kawan seperjuangan dan kehormatan menjaga kelestarian semesta."
       }
@@ -168,7 +168,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         id: "treasurer",
         name: "Mandalika Bilqis",
         role: "Treasurer",
-        dept: "Informatic Technology",
+        dept: "Information Technology",
         photo: "images/treasurer-mandalika.jpg",
         zoomClass: "scale-135 object-center"
       }
@@ -238,7 +238,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         name: "Mandalika Bilqis",
         role: "Ketua Divisi TREASURER",
         badge: "Treasurer",
-        major: "Informatic Technology",
+        major: "Information Technology",
         icon: "wallet",
         color: "text-emerald-400 border-emerald-500/30",
         photo: "images/treasurer-mandalika.jpg",
@@ -393,7 +393,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
       title: "Divisi TREASURER",
       subtitle: "Manajemen Keuangan, Anggaran & Fund Raising",
       coordinator: "Mandalika Bilqis",
-      major: "Informatic Technology",
+      major: "Information Technology",
       icon: "wallet",
       themeColor: "#10b981",
       accentBg: "bg-emerald-950/40 border-emerald-500/30",

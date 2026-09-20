@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diverventure President University — Booklet Resmi Organisasi Pecinta Alam</title>
+  <meta name="description" content="Website Booklet Resmi Diverventure President University - Unit Kegiatan Mahasiswa Pecinta Alam President University, Cikarang. Menapak Rimba, Mengarung Samudra, Menjaga Semesta." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#070d0f',
+            forest: {
+              950: '#06130d',
+              900: '#0d2217',
+              800: '#143621',
+              700: '#1e4d30',
+              600: '#2d6a4f',
+              500: '#40916c',
+              400: '#52b788',
+              300: '#74c69d'
+            },
+            ocean: {
+              950: '#020e14',
+              900: '#00222b',
+              800: '#004354',
+              700: '#005f73',
+              600: '#0a9396',
+              400: '#94d2bd',
+              300: '#c2e7db'
+            },
+            sand: {
+              400: '#e9d8a6',
+              500: '#d4a373'
+            },
+            beacon: {
+              500: '#e76f51',
+              600: '#ee9b00'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Custom Style -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 antialiased selection:bg-emerald-500 selection:text-white">
+
+
+  <!-- =========================================================================
+       1. CINEMATIC DRAMATIC TRANSITION OVERLAY SYSTEM
+       ========================================================================= -->
+  
+  <!-- 1.1 Top Progress Loading Bar -->
+  <div id="transition-progress-bar"></div>
+
+  <!-- 1.2 Fullscreen Dual-Tone Curtain Wipe & Splash Screen -->
+  <div id="transition-curtain">
+    <div class="curtain-layer curtain-layer-1"></div>
+    <div class="curtain-layer curtain-layer-2"></div>
+
+    <!-- 1.3 Transition Splash Logo Emblem (350-400ms flash) -->
+    <div id="transition-splash" class="flex flex-col items-center justify-center p-6 text-center">
+      <div class="relative w-28 h-28 mb-4 flex items-center justify-center">
+        <div class="absolute inset-0 rounded-full border-2 border-dashed border-emerald-400/40 compass-ring"></div>
+        <div class="absolute inset-2 rounded-full border border-cyan-400/50 pulse-glow"></div>
+        
+        <!-- Mountain & Wave Custom SVG Emblem -->
+        <svg class="w-14 h-14 text-white drop-shadow-[0_0_15px_rgba(82,183,136,0.8)]" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="32,10 14,46 50,46" fill="#143621" stroke="#52b788" stroke-width="2.5" stroke-linejoin="round" />
+          <polygon points="32,10 24,28 32,24 40,28" fill="#52b788" />
+          <path d="M10,48 C16,42 22,54 28,48 C34,42 40,54 46,48 C50,44 54,46 58,48" stroke="#94d2bd" stroke-width="3" stroke-linecap="round" fill="none" />
+          <path d="M6,54 C13,49 20,59 27,54 C34,49 41,59 48,54 C53,50 57,52 62,54" stroke="#0a9396" stroke-width="2" stroke-linecap="round" fill="none" />
+        </svg>
+      </div>
+
+      <div class="text-xl font-extrabold tracking-widest text-white font-heading">
+        DIVERVENTURE <span class="gradient-text-forest-ocean">PRESUNIV</span>
+      </div>
+      <div class="text-xs font-mono-coord text-emerald-300/80 tracking-widest uppercase mt-1">
+        President University • Est. 2000
+      </div>
+      <div class="mt-4 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="text-[11px] text-slate-400 font-mono-coord uppercase tracking-wider">Memuat Halaman...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. STICKY NAVBAR (GLASSMORPHISM)
+       ========================================================================= -->
+  <header class="fixed top-0 inset-x-0 z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo & Brand Name -->
+      <a href="#/home" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-700 to-cyan-700 border border-emerald-500/40 p-2 flex items-center justify-center shadow-md group-hover:border-emerald-400 transition-colors">
+          <svg class="w-7 h-7 text-white" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="32,10 14,46 50,46" fill="#143621" stroke="#52b788" stroke-width="2.5" stroke-linejoin="round" />
+            <polygon points="32,10 24,28 32,24 40,28" fill="#52b788" />
+            <path d="M10,48 C16,42 22,54 28,48 C34,42 40,54 46,48 C50,44 54,46 58,48" stroke="#94d2bd" stroke-width="3" stroke-linecap="round" fill="none" />
+            <path d="M6,54 C13,49 20,59 27,54 C34,49 41,59 48,54 C53,50 57,52 62,54" stroke="#0a9396" stroke-width="2" stroke-linecap="round" fill="none" />
+          </svg>
+        </div>
+        <div>
+          <span class="text-base sm:text-lg font-extrabold tracking-tight text-gray-900 block font-heading leading-tight">
+            DIVERVENTURE <span class="text-emerald-600">PRESUNIV</span>
+          </span>
+          <span class="text-[10px] text-gray-500 tracking-wider font-mono-coord uppercase block">
+            President University • Cikarang
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-1.5 xl:gap-2">
+        <a href="#/home" class="nav-link px-3.5 py-2 rounded-lg text-xs font-semibold text-gray-700 hover:text-emerald-700 hover:bg-emerald-50">Home</a>
+        <a href="#/tentang" class="nav-link px-3.5 py-2 rounded-lg text-xs font-semibold text-gray-700 hover:text-emerald-700 hover:bg-emerald-50">Tentang</a>
+        <a href="#/struktur" class="nav-link px-3.5 py-2 rounded-lg text-xs font-semibold text-gray-700 hover:text-emerald-700 hover:bg-emerald-50">Struktur Organisasi</a>
+        <a href="#/kegiatan" class="nav-link px-3.5 py-2 rounded-lg text-xs font-semibold text-gray-700 hover:text-emerald-700 hover:bg-emerald-50">Kegiatan</a>
+        <a href="#/gallery" class="nav-link px-3.5 py-2 rounded-lg text-xs font-semibold text-gray-700 hover:text-emerald-700 hover:bg-emerald-50">Gallery</a>
+        <a href="#/divisi" class="nav-link px-3.5 py-2 rounded-lg text-xs font-semibold text-gray-700 hover:text-emerald-700 hover:bg-emerald-50">Divisi</a>
+        <a href="#/kontak" class="nav-link px-3.5 py-2 rounded-lg text-xs font-semibold text-gray-700 hover:text-emerald-700 hover:bg-emerald-50">Kontak</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button 
+          id="audio-toggle-btn" 
+          title="Toggle Efek Suara Navigasi" 
+          class="w-9 h-9 rounded-xl border border-gray-200 bg-white flex items-center justify-center text-gray-500 hover:text-emerald-600 hover:border-emerald-300 transition-colors shadow-sm"
+        >
+          <i data-lucide="volume-x" id="audio-icon" class="w-4 h-4"></i>
+        </button>
+
+        <a 
+          href="#/kontak" 
+          class="btn-beacon px-4 py-2 rounded-xl text-xs font-bold text-white inline-flex items-center gap-2 shadow-md hover:shadow-orange-500/30"
+        >
+          <span>Hubungi Kami</span>
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <a 
+          href="#/kontak" 
+          class="btn-beacon px-3 py-1.5 rounded-lg text-xs font-bold text-white inline-flex items-center gap-1"
+        >
+          Kontak
+        </a>
+        <button 
+          id="mobile-menu-btn" 
+          class="p-2 rounded-xl border border-gray-200 bg-white text-gray-700 hover:text-emerald-700 focus:outline-none shadow-sm"
+          aria-label="Toggle Menu"
+        >
+          <i data-lucide="menu" id="hamburger-icon" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-lg px-4 pt-3 pb-6 space-y-1">
+      <a href="#/home" class="nav-link block px-3 py-2.5 rounded-xl text-sm font-semibold text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">
+        <div class="flex items-center gap-3"><i data-lucide="home" class="w-4 h-4 text-emerald-500"></i> Home</div>
+      </a>
+      <a href="#/tentang" class="nav-link block px-3 py-2.5 rounded-xl text-sm font-semibold text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">
+        <div class="flex items-center gap-3"><i data-lucide="info" class="w-4 h-4 text-emerald-500"></i> Tentang Kami</div>
+      </a>
+      <a href="#/struktur" class="nav-link block px-3 py-2.5 rounded-xl text-sm font-semibold text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">
+        <div class="flex items-center gap-3"><i data-lucide="users" class="w-4 h-4 text-emerald-500"></i> Struktur Organisasi</div>
+      </a>
+      <a href="#/kegiatan" class="nav-link block px-3 py-2.5 rounded-xl text-sm font-semibold text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">
+        <div class="flex items-center gap-3"><i data-lucide="image" class="w-4 h-4 text-cyan-500"></i> Kegiatan Lapangan</div>
+      </a>
+      <a href="#/gallery" class="nav-link block px-3 py-2.5 rounded-xl text-sm font-semibold text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">
+        <div class="flex items-center gap-3"><i data-lucide="camera" class="w-4 h-4 text-pink-500"></i> Gallery Foto</div>
+      </a>
+      <a href="#/divisi" class="nav-link block px-3 py-2.5 rounded-xl text-sm font-semibold text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">
+        <div class="flex items-center gap-3"><i data-lucide="compass" class="w-4 h-4 text-cyan-500"></i> 7 Divisi Resmi</div>
+      </a>
+      <a href="#/kontak" class="nav-link block px-3 py-2.5 rounded-xl text-sm font-semibold text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">
+        <div class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-teal-500"></i> Kontak & Media Sosial</div>
+      </a>
+    </div>
+  </header>
+
+
+  <!-- =========================================================================
+       3. MAIN SPA VIEW CONTAINER
+       ========================================================================= -->
+  <main id="app-view" class="w-full min-h-screen pt-20"></main>
+
+  <!-- =========================================================================
+       4. GLOBAL FOOTER
+       ========================================================================= -->
+  <footer class="bg-gray-100 border-t border-gray-200 relative pt-16 pb-12 overflow-hidden">
+    <div class="absolute inset-x-0 -top-6 opacity-10 pointer-events-none">
+      <svg class="w-full h-16 fill-current text-emerald-600" viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <polygon points="0,100 240,20 480,100 720,10 960,100 1200,30 1440,100" />
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-emerald-700 border border-emerald-500/40 flex items-center justify-center text-white">
+              <i data-lucide="compass" class="w-5 h-5"></i>
+            </div>
+            <span class="text-base font-extrabold text-gray-900 font-heading">DIVERVENTURE PRESUNIV</span>
+          </div>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Unit Kegiatan Mahasiswa Pecinta Alam President University, Kota Jababeka, Cikarang Baru, Bekasi. Eksplorasi rimba gunung dan kelautan kepulauan nusantara sejak tahun 2000-an.
+          </p>
+          <div class="text-[11px] font-mono-coord text-emerald-700 font-semibold">
+            Motto: "Satu langkah, Seribu makna"
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div>
+          <h4 class="text-xs font-bold text-gray-900 uppercase tracking-wider font-mono-coord mb-4">Navigasi Halaman</h4>
+          <ul class="space-y-2 text-xs text-gray-500">
+            <li><a href="#/home" class="hover:text-emerald-700 transition-colors">Beranda</a></li>
+            <li><a href="#/tentang" class="hover:text-emerald-700 transition-colors">Tentang Kami</a></li>
+            <li><a href="#/struktur" class="hover:text-emerald-700 transition-colors">Struktur Organisasi</a></li>
+            <li><a href="#/kegiatan" class="hover:text-emerald-700 transition-colors">Dokumentasi Kegiatan</a></li>
+            <li><a href="#/gallery" class="hover:text-emerald-700 transition-colors">Gallery Foto</a></li>
+            <li><a href="#/divisi" class="hover:text-emerald-700 transition-colors">7 Divisi Resmi</a></li>
+            <li><a href="#/kontak" class="hover:text-emerald-700 transition-colors">Kontak & Sekretariat</a></li>
+          </ul>
+        </div>
+
+        <!-- 7 Divisi Organisasi -->
+        <div>
+          <h4 class="text-xs font-bold text-gray-900 uppercase tracking-wider font-mono-coord mb-4">7 Divisi Diverventure</h4>
+          <ul class="space-y-1.5 text-xs text-gray-500">
+            <li><a href="#/divisi?divisi=mtdd" class="hover:text-cyan-700 transition-colors">MTDD</a></li>
+            <li><a href="#/divisi?divisi=mountaineering" class="hover:text-cyan-700 transition-colors">Mountaineering</a></li>
+            <li><a href="#/divisi?divisi=human-resources" class="hover:text-cyan-700 transition-colors">Human Resource</a></li>
+            <li><a href="#/divisi?divisi=equipment" class="hover:text-cyan-700 transition-colors">Equipment</a></li>
+            <li><a href="#/divisi?divisi=secretary" class="hover:text-cyan-700 transition-colors">Secretary</a></li>
+            <li><a href="#/divisi?divisi=public-relations" class="hover:text-cyan-700 transition-colors">Public Relation</a></li>
+            <li><a href="#/divisi?divisi=student-activities" class="hover:text-cyan-700 transition-colors">Student Activities</a></li>
+          </ul>
+        </div>
+
+        <!-- Media Sosial & Kontak -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold text-gray-900 uppercase tracking-wider font-mono-coord mb-4">Kontak & Media Sosial</h4>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:diverventurepresuniv@gmail.com" class="hover:underline font-mono-coord text-gray-700 hover:text-emerald-700">diverventurepresuniv@gmail.com</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-pink-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <a href="https://instagram.com/diverventurepresuniv" target="_blank" rel="noopener" class="hover:underline font-mono-coord text-gray-700 hover:text-pink-600">@diverventurepresuniv</a>
+            </div>
+          <div class="pt-2 text-[11px] text-gray-400">
+            Student Activity Center, President University, Cikarang, Bekasi
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Disclaimer -->
+      <div class="pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+        <div>
+          &copy; 2000 - 2026 DIVERVENTURE PRESIDENT UNIVERSITY • Hak Cipta Dilindungi.
+        </div>
+        <div class="flex items-center gap-4 text-xs font-mono-coord">
+          <span class="text-emerald-600">Single Page Application</span>
+          <span>•</span>
+          <span class="text-cyan-600">President University</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =========================================================================
+       5. TOAST NOTIFICATION CONTAINER
+       ========================================================================= -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-[999999] flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- Global Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/router.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+
+      // Mobile Menu Hamburger Toggle
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      // Audio Synthesizer Toggle
+      const audioBtn = document.getElementById('audio-toggle-btn');
+      if (audioBtn && window.wanasagaraRouter) {
+        audioBtn.addEventListener('click', () => {
+          window.wanasagaraRouter.audioEnabled = !window.wanasagaraRouter.audioEnabled;
+          if (window.wanasagaraRouter.audioEnabled) {
+            audioBtn.classList.add('border-emerald-400', 'text-emerald-400');
+            audioBtn.innerHTML = '<i data-lucide="volume-2" class="w-4 h-4"></i>';
+            window.showToast("Efek suara navigasi aktif 🔊");
+          } else {
+            audioBtn.classList.remove('border-emerald-400', 'text-emerald-400');
+            audioBtn.innerHTML = '<i data-lucide="volume-x" class="w-4 h-4"></i>';
+            window.showToast("Efek suara navigasi dinonaktifkan 🔇");
+          }
+          if (window.lucide) window.lucide.createIcons();
+        });
+      }
+    });
+
+    // Global Toast Notification Helper
+    window.showToast = function(message) {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+
+      const toast = document.createElement('div');
+      toast.className = 'glass-modal border border-emerald-500/40 text-white px-5 py-3 rounded-xl shadow-2xl text-xs sm:text-sm font-medium flex items-center gap-2.5 transform translate-y-4 opacity-0 transition-all duration-300 pointer-events-auto';
+      toast.innerHTML = `
+        <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+        <span>${message}</span>
+      `;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-4', 'opacity-0');
+      }, 10);
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 350);
+      }, 3500);
+    };
+  </script>
+</body>
+</html>

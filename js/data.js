@@ -134,9 +134,10 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
   },
 
   structure: {
-    // BADAN PENGURUS — hanya Ketua & Wakil Ketua yang tampil di bagian atas
+    // BADAN PENGURUS HARIAN (BPH 2026 - SEKARANG)
     bph: [
       {
+        id: "ketua",
         name: "Nico Johannes Sirait",
         role: "Ketua (Chair Person)",
         dept: "Informatic Technology",
@@ -145,34 +146,36 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         quote: "Diverventure adalah wadah pembuktian bahwa ketangguhan rimba pegunungan menyatu dalam karakter kepemimpinan beretika."
       },
       {
+        id: "wakil-ketua",
         name: "Zaky Purwana",
         role: "Wakil Ketua (Vice Chair Person)",
         dept: "Informatic Technology",
         photo: "images/wakil-zaky.jpg",
         quote: "Di alam bebas tidak ada sekat pemisah; yang ada hanyalah pundak kawan seperjuangan dan kehormatan menjaga kelestarian semesta."
-      }
-    ],
-
-    // ANGGOTA BPH LAINNYA (Secretary & Treasurer — ditampilkan terpisah di bawah, bukan di hero utama)
-    bphSupport: [
-      {
-        name: "Jihan R A",
-        role: "Secretary",
-        dept: "Secretary",
-        photo: "images/secretary-jihan.jpg"
       },
       {
+        id: "secretary",
+        name: "Jihan R A",
+        role: "Secretary (Sekretaris General)",
+        dept: "Secretary",
+        photo: "images/secretary-jihan.jpg",
+        quote: "Tertib administrasi dan kearsipan legal adalah fondasi utama keberlanjutan ekspedisi organisasi."
+      },
+      {
+        id: "treasurer",
         name: "Mandalika Bilqis",
-        role: "Treasurer",
+        role: "Treasurer (Bendahara General)",
         dept: "Informatic Technology",
         photo: "images/treasurer-mandalika.jpg",
-        zoomClass: "scale-135 object-center"
+        zoomClass: "scale-135 object-center",
+        quote: "Akuntabilitas finansial dan efisiensi pembekalan logistik adalah kunci kelancaran operasional ekspedisi."
       }
     ],
 
     // KETUA DIVISI RESMI
     divisionsHeads: [
       {
+        id: "mtdd",
         name: "Gabrielle Chelesta",
         role: "Ketua Divisi MTDD",
         badge: "MTDD",
@@ -183,6 +186,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         desc: "Memimpin divisi Media, Design, and Documentation (MTDD) yang mengelola strategi media digital, visual branding, desain grafis, dokumentasi fotografi & videografi kegiatan."
       },
       {
+        id: "mountaineering",
         name: "Padjar Suryadi",
         role: "Ketua Divisi MOUNTAINEERING",
         badge: "Mountaineering",
@@ -193,9 +197,10 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         desc: "Fokus pada penjelajahan ketinggian, perintisan rute hutan primer, navigasi darat presisi, survival rimba basah, dan pendakian puncak nusantara."
       },
       {
+        id: "human-resources",
         name: "Nanta Claudia",
-        role: "Ketua Divisi HUMAN RESOURCE",
-        badge: "Human Resource",
+        role: "Ketua Divisi HUMAN RESOURCES",
+        badge: "Human Resources",
         major: "Management",
         icon: "users",
         color: "text-cyan-400 border-cyan-500/30",
@@ -205,9 +210,10 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         desc: "Mengawal kaderisasi anggota, pembinaan karakter mental petualang, evaluasi psikologis, kesejahteraan anggota, serta keharmonisan internal."
       },
       {
+        id: "public-relations",
         name: "Shafa Aqila",
-        role: "Ketua Divisi PUBLIC RELATION",
-        badge: "Public Relation",
+        role: "Ketua Divisi PUBLIC RELATIONS",
+        badge: "Public Relations",
         major: "Business Administration",
         icon: "globe",
         color: "text-blue-400 border-blue-500/30",
@@ -215,6 +221,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         desc: "Menjadi wajah dan corong komunikasi Diverventure, mengelola akun media sosial (@diverventurepresuniv), konten ekspedisi, sponsorship, dan publikasi."
       },
       {
+        id: "secretary",
         name: "Jihan R A",
         role: "Ketua Divisi SECRETARY",
         badge: "Secretary",
@@ -225,6 +232,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         desc: "Mengelola kearsipan organisasi, legalitas izin kawasan, surat-menyurat resmi, dan administrasi organisasi."
       },
       {
+        id: "equipment",
         name: "Muhammad Nichollass",
         role: "Ketua Divisi EQUIPMENT",
         badge: "Equipment",
@@ -235,6 +243,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         desc: "Bertanggung jawab atas audit kelaikan pakai alat outdoor, perawatan peralatan selam, tali karmantel, dan sistem inventaris logistik."
       },
       {
+        id: "student-activities",
         name: "Srikandi Syifa Ash Sahwa",
         role: "Ketua Divisi STUDENT ACTIVITIES",
         badge: "Student Activities",

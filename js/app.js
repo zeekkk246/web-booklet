@@ -480,67 +480,47 @@ const WanasagaraApp = {
             Struktur <span class="gradient-text-forest-ocean">Organisasi</span>
           </h1>
           <p class="text-gray-600 text-sm sm:text-base mt-3">
-            Badan Pengurus Diverventure President University beserta Ketua 7 Divisi Resmi.
+            Badan Pengurus Harian (BPH) Diverventure President University beserta Ketua 7 Divisi Resmi.
           </p>
         </div>
 
-        <!-- KETUA & WAKIL KETUA (hanya 2 orang di bagian utama) -->
-        <div class="mb-10">
+        <!-- BADAN PENGURUS HARIAN (4 CORE OFFICERS) -->
+        <div class="mb-16">
           <div class="flex items-center gap-3 mb-6">
             <i data-lucide="shield" class="w-5 h-5 text-emerald-500"></i>
-            <h2 class="text-xl font-bold text-gray-900 font-heading">Badan Pengurus — Ketua & Wakil Ketua</h2>
+            <h2 class="text-xl font-bold text-gray-900 font-heading">Badan Pengurus Harian (BPH 2026 - Sekarang)</h2>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             ${data.structure.bph.map(leader => `
-              <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-md flex flex-col justify-between group">
-                <div class="relative h-72 overflow-hidden">
-                  <img src="${leader.photo}" alt="${leader.name}" style="${leader.objectStyle ? 'object-position:' + leader.objectStyle + ';' : ''}" class="w-full h-full object-cover ${leader.objectPos || 'object-center'} group-hover:scale-105 transition-transform duration-500" />
+              <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-md flex flex-col justify-between group hover:shadow-lg transition-shadow">
+                <div class="relative h-64 overflow-hidden">
+                  <img src="${leader.photo}" alt="${leader.name}" style="${leader.objectStyle ? 'object-position:' + leader.objectStyle + ';' : ''}" class="w-full h-full object-cover ${leader.zoomClass || ''} ${leader.objectPos || 'object-center'} group-hover:scale-105 transition-transform duration-500" />
                   <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold bg-emerald-600 text-white">
+                  <div class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold bg-emerald-600 text-white shadow whitespace-nowrap">
                     ${leader.role}
                   </div>
                 </div>
-                <div class="p-6">
-                  <h3 class="text-lg font-bold text-gray-900">${leader.name}</h3>
-                  <div class="mt-1 inline-block px-2.5 py-0.5 rounded bg-cyan-100 text-cyan-700 text-[11px] font-mono-coord border border-cyan-200">
-                    ${leader.dept} — President University
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 class="text-base font-bold text-gray-900">${leader.name}</h3>
+                    <div class="mt-1 inline-block px-2.5 py-0.5 rounded bg-cyan-100 text-cyan-700 text-[11px] font-mono-coord border border-cyan-200">
+                      ${leader.dept} — Presuniv
+                    </div>
+                    <p class="text-xs text-gray-500 italic mt-3 border-l-2 border-emerald-400 pl-2.5 leading-relaxed">
+                      "${leader.quote}"
+                    </p>
                   </div>
-                  <p class="text-xs text-gray-500 italic mt-4 border-l-2 border-emerald-400 pl-3 leading-relaxed">
-                    "${leader.quote}"
-                  </p>
                 </div>
               </div>
             `).join('')}
           </div>
         </div>
 
-        <!-- SECRETARY & TREASURER -->
-        <div class="mb-16">
-          <div class="flex items-center gap-3 mb-6">
-            <i data-lucide="users" class="w-5 h-5 text-cyan-500"></i>
-            <h2 class="text-xl font-bold text-gray-900 font-heading">Secretary & Treasurer</h2>
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            ${data.structure.bphSupport.map(member => `
-              <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-md flex items-center gap-5 p-5 group">
-                <div class="w-20 h-20 rounded-xl overflow-hidden border border-gray-200 shrink-0">
-                  <img src="${member.photo}" alt="${member.name}" class="w-full h-full object-cover ${member.zoomClass || 'group-hover:scale-105'} transition-transform duration-300" />
-                </div>
-                <div>
-                  <div class="text-xs font-mono-coord text-emerald-600 uppercase tracking-wider mb-1">${member.role}</div>
-                  <h3 class="text-base font-bold text-gray-900">${member.name}</h3>
-                  <div class="text-[11px] text-cyan-600 font-mono-coord mt-0.5">${member.dept} — President University</div>
-                </div>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-
-        <!-- KETUA 7 DIVISI -->
+        <!-- KETUA 7 DIVISI RESMI -->
         <div class="mb-16">
           <div class="flex items-center gap-3 mb-6">
             <i data-lucide="compass" class="w-5 h-5 text-cyan-500"></i>
-            <h2 class="text-xl font-bold text-gray-900 font-heading">Ketua 7 Divisi Resmi</h2>
+            <h2 class="text-xl font-bold text-gray-900 font-heading">Ketua 7 Divisi Resmi Organisasi</h2>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             ${data.structure.divisionsHeads.map(head => `
@@ -566,7 +546,7 @@ const WanasagaraApp = {
                 </div>
                 <div class="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center text-xs">
                   <span class="text-gray-400 font-mono-coord">President University</span>
-                  <a href="#/divisi?divisi=${head.badge.toLowerCase().replace(/\s+/g, '-')}" class="text-cyan-600 hover:text-cyan-500 font-semibold">Lihat Divisi &rarr;</a>
+                  <a href="#/divisi?divisi=${head.id}" class="text-cyan-600 hover:text-cyan-500 font-semibold">Lihat Divisi &rarr;</a>
                 </div>
               </div>
             `).join('')}
@@ -670,9 +650,13 @@ const WanasagaraApp = {
   // =========================================================================
   renderDivisi(params = {}) {
     const data = window.DIVERVENTURE_DATA || window.MAPALA_DATA;
-    // Normalized lookup: check id or match badge
+    // Normalized lookup: check id, match with/without trailing 's', or badge
     const requestedId = (params.divisi || '').toLowerCase().trim();
-    let activeDivision = data.divisions.find(d => d.id === requestedId);
+    let activeDivision = data.divisions.find(d => 
+      d.id === requestedId || 
+      d.id.replace(/-s$/, '') === requestedId.replace(/-s$/, '') ||
+      d.title.toLowerCase().includes(requestedId)
+    );
     if (!activeDivision) {
       activeDivision = data.divisions[0]; // default MTDD
     }

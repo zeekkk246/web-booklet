@@ -161,7 +161,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         id: "secretary",
         name: "Jihan R A",
         role: "Secretary",
-        dept: "Secretary",
+        dept: "Business Administration",
         photo: "images/secretary-jihan.jpg"
       },
       {
@@ -227,7 +227,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
         name: "Jihan R A",
         role: "Ketua Divisi SECRETARY",
         badge: "Secretary",
-        major: "Secretary",
+        major: "Business Administration",
         icon: "file-text",
         color: "text-teal-400 border-teal-500/30",
         photo: "images/secretary-jihan.jpg",
@@ -370,7 +370,7 @@ Memasuki masa kepengurusan Badan Pengurus 2 saat ini, Diverventure terus berkemb
       title: "Divisi SECRETARY",
       subtitle: "Kesekretariatan, Tata Kelola & Dokumen Legal",
       coordinator: "Jihan R A",
-      major: "Secretary",
+      major: "Business Administration",
       icon: "file-text",
       themeColor: "#94d2bd",
       accentBg: "bg-teal-950/40 border-teal-500/30",
